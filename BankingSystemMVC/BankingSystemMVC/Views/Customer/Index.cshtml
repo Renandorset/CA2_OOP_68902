@@ -1,0 +1,17 @@
+﻿
+
+@{
+    ViewData["Title"] = "Customer Dashboard";
+}
+
+<h2>Welcome, Customer!</h2>
+
+<div class="panel panel-success" bis_skin_checked="1">
+    <div class="panel-body" bis_skin_checked="1">
+        <h3 class="card-title">Customer Actions</h3>
+        <ul class="grid-group grid-group-flush">
+            <a asp-action="History" class="btn btn-info">View Transaction History</a>
+            <a asp-action="CreateTransaction" class="btn btn-success">Create Transaction</a>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿
+
+@model IEnumerable<BankingSystemMVC.Models.Transaction>
+
+<h2>Transaction History</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+
+        <thead class="thead-dark">
+            <tr class="info">
+                <th>Date</th>
+                <th>Action</th>
+                <th>Amount</th>
+                <th>Final Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in Model)
+            {
+               
+                <tr>
+                    <td>@transaction.Date</td>
+                    <td>@transaction.Action</td>
+                    <td>@transaction.Amount</td>
+                    <td>@transaction.FinalBalance</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
